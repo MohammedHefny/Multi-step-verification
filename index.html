@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/verification.css">
+</head>
+
+<body>
+    <div class="verification">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <div class="image position-relative col-lg-4 col-md-4 col-sm-12">
+                <img class="desktop" src="images/bg-sidebar-desktop.svg" alt="">
+                <img class=" mobile" src="images/bg-sidebar-mobile.svg" alt="">
+                <div class="steps">
+                    <div class="step">
+                        <span class="num1 circle active">1</span>
+                        <div class="texts">
+                            <span class="stepNum text-uppercase">step 1</span>
+                            <span class="text text-uppercase">your info</span>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="num2 circle">2</span>
+                        <div class="texts">
+                            <span class="stepNum text-uppercase">step 2</span>
+                            <span class="text text-uppercase">select plan</span>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="num3 circle">3</span>
+                        <div class="texts">
+                            <span class="stepNum text-uppercase">step 3</span>
+                            <span class="text text-uppercase">add-ons</span>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="num4 circle">4</span>
+                        <div class="texts">
+                            <span class="stepNum text-uppercase">step 4</span>
+                            <span class="text text-uppercase">summary</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personalInfo  col-lg-7 col-md-7 col-sm-12">
+                <h2 class="fw-bold">personal info</h2>
+                <p class="text-black-50 mb-4">please provide your name, email address and phone number.</p>
+                <form>
+                    <label class="d-block" for="name">name</label>
+                    <div class="required position-relative">
+                        <span class="position-absolute d-block rname ">this field is required</span>
+                        <input placeholder="Enter Your Name" class="d-block name" id="name" type="text">
+                    </div>
+                    <label class="d-block" for="email">Email address</label>
+                    <div class="required ">
+                        <span class="position-absolute d-block remail">this field is required(a valid email)</span>
+                        <input placeholder="Enter Your Email" class="d-block email" id="email" type="email">
+                    </div>
+                    <label class="d-block" for="phone">phone number</label>
+                    <div class="required ">
+                        <span class="position-absolute d-block rphone">this field is required(a valid phone
+                            number)</span>
+                        <input placeholder="e.g 01234567891" class="d-block phone" id="phone" type="text">
+                    </div>
+                </form>
+                <button class="text-uppercase nextStep disabled">next step</button>
+            </div>
+            <div class="plan col-lg-7 col-md-7 col-sm-12 hide">
+                <h2>select your plan</h2>
+                <p class="text-black-50">you have the option of monthly or yearly billing</p>
+                <ul class="plans d-flex align-items-center justify-content-between mt-5">
+                    <li class="d-flex align-items-center justify-content-between flex-wrap one">
+                        <img class="mb-4" src="images/icon-arcade.svg" alt="">
+                        <span class="d-block w-100 ar">arcade</span>
+                        <span class="text-black-50">$9/mo</span>
+                    </li>
+                    <li class="two">
+                        <img class="mb-4" src="images/icon-advanced.svg" alt="">
+                        <span class="d-block w-100">advanced</span>
+                        <span class="text-black-50">$12/mo</span>
+                    </li>
+                    <li class="three">
+                        <img class="mb-4" src="images/icon-pro.svg" alt="">
+                        <span class="d-block w-100">pro</span>
+                        <span class="text-black-50">$15/mo</span>
+                    </li>
+                </ul>
+                <div class="choose">
+                    <span>monthly</span>
+                    <label>
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                    </label>
+                    <span>yearly</span>
+                </div>
+                <div class="buttons d-flex align-items-center justify-content-between mt-5">
+                    <button class="border-0 back">go back</button>
+                    <button class="border-0 nextplan">next step</button>
+                </div>
+            </div>
+            <div class="AdOns col-lg-7 col-md-7 col-sm-12 hide">
+                <h2>pick add-Ons</h2>
+                <p class="text-black-50">Add-ons help enhance your gaming experience</p>
+                <ul class="plans d-flex align-items-center justify-content-between mt-5">
+                    <li class="d-flex align-items-center justify-content-between one">
+                        <div class="holder">
+                            <span class="d-block w-100">online service</span>
+                            <span class="text-black-50">access to multiplayer games</span>
+                        </div>
+                        <span class="text-black-50 num">+ $1/mo</span>
+                    </li>
+                    <li class="two d-flex align-items-center justify-content-between">
+                        <div class="holder">
+                            <span class="d-block w-100">larger storage</span>
+                            <span class="text-black-50">extra 1TB of cloud save</span>
+                        </div>
+                        <span class="text-black-50 num">+ $2/mo</span>
+
+                    </li>
+                    <li class="three d-flex align-items-center justify-content-between">
+                        <div class="holder">
+                            <span class="d-block w-100">customizable profile</span>
+                            <span class="text-black-50">custom theme on your profile</span>
+                        </div>
+                        <span class="text-black-50 num">+ $2/mo</span>
+                    </li>
+                </ul>
+                <div class="buttons d-flex align-items-center justify-content-between mt-5">
+                    <button class="border-0 back">go back</button>
+                    <button class="border-0 nextplan">next step</button>
+                </div>
+            </div>
+            <div class="finish col-lg-7 col-md-7 col-sm-12 hide">
+                <h2>finishing up</h2>
+                <p class="text-black-50 mb-0">double-check everything looks OK before confirming</p>
+                <ul class="plans d-flex align-items-center justify-content-between mt-5">
+                    <li class="d-flex align-items-center justify-content-between one">
+                        <div class="holder">
+                            <span class="d-block w-100 sub">Arcade Monthly</span>
+                            <span class="text-black-50 change" href="#">Change</span>
+                        </div>
+                        <span class="text-black-50 num price"> $9/mo</span>
+                    </li>
+                    <li class="two d-flex align-items-center justify-content-between two r1">
+                        <div class="holder ">
+                            <span class="d-block w-100">online service</span>
+                        </div>
+                        <span class="text-black-50 num"> $1/mo</span>
+
+                    </li>
+                    <li class="three d-flex align-items-center justify-content-between three r2">
+                        <div class="holder ">
+                            <span class="d-block w-100">larger storage</span>
+                        </div>
+                        <span class="text-black-50 num">+ $2/mo</span>
+                    </li>
+                    <li class="four d-flex align-items-center justify-content-between four r3">
+                        <div class="holder ">
+                            <span class="d-block w-100">customizable profile</span>
+                        </div>
+                        <span class="text-black-50 num">+ $2/mo</span>
+                    </li>
+                    <li class="total d-flex align-items-center justify-content-between">
+                        <div class="holder">
+                            <span class="d-block w-100">total </span>
+                        </div>
+                        <span class="text-black-50 num">+$ <span class="TotalPerMonth"></span> <span
+                                class="month">/mo</span> </span>
+                    </li>
+                </ul>
+                <div class="buttons d-flex align-items-center justify-content-between mt-0">
+                    <button class="border-0 back">go back</button>
+                    <button class="border-0 nextplan">confirm</button>
+                </div>
+            </div>
+            <div class="thanks col-lg-7 col-md-7 col-sm-12 text-center hide">
+                <img class="mb-4 mt-4" src="images/icon-thank-you.svg" alt="">
+                <h2 class="fw-bold mainColor">thank you!</h2>
+                <p class="text-black-50 ">thanks for confirming your subscription! we hope you have fun using
+                    our
+                    platform. if you ever need support please feel free to email us at support@loremgaming.com
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/verification.js"></script>
+</body>
+
+</html>
